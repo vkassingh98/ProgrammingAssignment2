@@ -3,6 +3,9 @@
 
 ## Write a short comment describing this function
 
+## This function sets the matrix, gets the matrix,
+## This function sets the inverse of matrix and gets the inverse.
+
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
   set <- function(y) {
@@ -19,6 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
+## This function solves the matrix and if the inverse of matrix has
+## already been calculated previous it returns the cached value, so
+## that it doesn't have to calculate the same inverse again.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
